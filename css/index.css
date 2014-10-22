@@ -1,35 +1,92 @@
-html,body{
+html,body,h1,h2,h3,h4,h5,h6,p{
   border:0;
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
+  font-weight:300;
   margin:0;
   padding:0;
 }
 body{
-  background:#ccc;
-  font-family:"Open Sans", Helvetica, Arial, sans-serif;
-  font-weight:normal;
+  background:#fbfbfb;
+  padding:20px;
+}
+h2{
+  background:#E8EBF8;
+  border-radius: 10px 10px 0 0;
+  margin:-15px -25px;
+  padding: 5px 15px;
 }
 .container{
   margin:0 auto;
   max-width:1000px;
-  padding:0 20px;
 }
-nav{
-  background:#999;
+nav, footer{
+  margin:15px 0;
 }
-nav ul, nav li{
-  margin:0;
+footer{
+  float:right;
+}
+nav ul, nav li, footer ul, footer li{
   list-style:none;
+  margin: 0;
   padding:0;
 }
-nav li{
+nav li, footer li{
   display:inline-block;
+  letter-spacing:3px;
 }
-nav li a{
-  color:#fff;
-  display:inline-block;
-  padding:8px 15px;
+nav li a, footer li a{
+  color:#999;
+  font-size:20px;
+  padding:8px 20px;
   text-decoration:none;
 }
+nav li.sel a{
+  color:#555;
+  font-weight:500;
+}
 nav li:first-child a{
-  padding-left:0;
+  margin-left:200px;
+}
+footer li:last-child a{
+  padding-right:0;
+}
+.content{
+  border:2px solid #8881cf;
+  border-radius:10px;
+  min-height:500px;
+  padding:15px 25px;
+  position:relative;
+}
+
+.selfie{
+  background:url(../images/waldo.jpg) no-repeat 0 -85px;
+  background-size:112%;
+  border-radius:50%;
+  height:200px;
+  position:relative;
+  left:-70px;
+  top:-70px;
+  transition:1s;
+  width:200px;
+}
+.selfie:hover{
+  -webkit-transform:rotate(-180deg);
+  transform:rotate(-180deg);
+  transition:1s;
+}
+.blurb{
+  color:#999;
+  font-size:32px;
+  left: 50%;
+  line-height:44px;
+  margin:0 auto;
+  position:absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width:75%;
+}
+.blurb .name{
+  color:#666;
+  float:right;
+  margin-top:20px;
 }
