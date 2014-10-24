@@ -4,19 +4,19 @@ function ChangeQuote() {
   
   var quotes = [
   	{
-  		quotation: "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.",
+  		quotation: "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.<br />",
   		author: "Douglas Adams"
   	},
   	{
-  		quotation: "Don't look at your feet to see if you are doing it right. Just dance.",
+  		quotation: "Don't look at your feet to see if you are doing it right. Just dance.<br />",
   		author: "Anne Lamott"
   	},
   	{
-  		quotation: "We can judge our progress by the courage of our questions and the depth of our answers, our willingness to embrace what is true rather than what feels good.",
+  		quotation: "We can judge our progress by the courage of our questions and the depth of our answers,<br />our willingness to embrace what is true<br />rather than what feels good.<br />",
   		author: "Carl Sagan"
   	},
   	{
-  		quotation: "Knowing how to be solitary is central to the art of loving. When we can be alone, we can be with others without using them as a means of escape.",
+  		quotation: "Knowing how to be solitary is central to the art of loving. When we can be alone, we can be with others without using them as a means of escape.<br />",
   		author: "bell hooks"
   	}
   ];

@@ -5,15 +5,21 @@ html,body,h1,h2,h3,h4,h5,h6,p{
   margin:0;
   padding:0;
 }
+a{
+  text-decoration:none;
+}
 body{
   background:#fbfbfb;
   padding:20px;
 }
-h2{
-  background:#E8EBF8;
-  border-radius:10px 10px 0 0;
-  margin:-15px -25px;
-  padding:5px 15px;
+nav h1 a{
+  color:#555;
+  float:left;
+  margin:5px 0 0 180px;
+  font-size:50px;
+  font-variant:small-caps;
+  letter-spacing:5px;
+  line-height:0;
 }
 .container{
   margin:0 auto;
@@ -21,9 +27,8 @@ h2{
 }
 nav, footer{
   margin:15px 0;
-}
-footer{
-  float:right;
+  text-align:right;
+  width:100%;
 }
 nav ul, nav li, footer ul, footer li{
   list-style:none;
@@ -49,15 +54,13 @@ nav li.sel a{
   font-weight:500;
   opacity:1.0;
 }
-nav li:first-child a{
-  margin-left:200px;
-}
-footer li:last-child a{
+nav li:last-child a,footer li:last-child a{
   padding-right:0;
 }
 .content{
   border:2px solid #8881cf;
   border-radius:10px;
+  clear:both;
   min-height:500px;
   padding:15px 25px;
   position:relative;
@@ -79,6 +82,11 @@ footer li:last-child a{
   transform:rotate(-180deg);
   transition:1s;
 }
+.selfie a{
+  display:block;
+  height:100%;
+  width:100%;
+}
 .blurb{
   color:#999;
   font-size:32px;
@@ -86,12 +94,14 @@ footer li:last-child a{
   line-height:44px;
   margin:0 auto;
   position:absolute;
+  text-align:center;
   top:50%;
   transform:translate(-50%, -50%);
-  width:75%;
+  width:76%;
 }
 .blurb .name{
   color:#666;
+  display:block;
   float:right;
   margin-top:20px;
 }
