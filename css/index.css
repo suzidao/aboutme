@@ -11,9 +11,9 @@ body{
 }
 h2{
   background:#E8EBF8;
-  border-radius: 10px 10px 0 0;
+  border-radius:10px 10px 0 0;
   margin:-15px -25px;
-  padding: 5px 15px;
+  padding:5px 15px;
 }
 .container{
   margin:0 auto;
@@ -27,7 +27,7 @@ footer{
 }
 nav ul, nav li, footer ul, footer li{
   list-style:none;
-  margin: 0;
+  margin:0;
   padding:0;
 }
 nav li, footer li{
@@ -35,14 +35,19 @@ nav li, footer li{
   letter-spacing:3px;
 }
 nav li a, footer li a{
-  color:#999;
+  color:#555;
   font-size:20px;
+  opacity: 0.7;
   padding:8px 20px;
   text-decoration:none;
+}
+nav li a:hover, footer li a:hover{
+  opacity:1.0;
 }
 nav li.sel a{
   color:#555;
   font-weight:500;
+  opacity:1.0;
 }
 nav li:first-child a{
   margin-left:200px;
@@ -77,12 +82,12 @@ footer li:last-child a{
 .blurb{
   color:#999;
   font-size:32px;
-  left: 50%;
+  left:50%;
   line-height:44px;
   margin:0 auto;
   position:absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top:50%;
+  transform:translate(-50%, -50%);
   width:75%;
 }
 .blurb .name{
