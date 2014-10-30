@@ -12,13 +12,17 @@ function ChangeQuote() {
   		author: "Anne Lamott"
   	},
   	{
-  		quotation: "We can judge our progress by the courage of our questions and the depth of our answers,<br />our willingness to embrace what is true<br />rather than what feels good.<br />",
+  		quotation: "We can judge our progress by the courage of our questions and the depth of our answers, our willingness to embrace what is true rather than what feels good.<br />",
   		author: "Carl Sagan"
   	},
   	{
   		quotation: "Knowing how to be solitary is central to the art of loving. When we can be alone, we can be with others without using them as a means of escape.<br />",
   		author: "bell hooks"
-  	}
+  	},
+    {
+      quotation: "It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.<br />",
+      author: "Vincent van Gogh"
+    }
   ];
 
   function rand(q) {
