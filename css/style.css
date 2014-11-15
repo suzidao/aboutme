@@ -75,12 +75,15 @@ nav li:last-child a,footer li:last-child a{
   background:url(../images/waldo.jpg) no-repeat 0 -85px;
   background-size:112%;
   border-radius:50%;
+  box-sizing:border-box;
   float:left;
   height:200px;
-  margin:-70px 24px   4px -70px;
+  margin:-70px 35px 0 -70px;
   position:relative;
   transition:1s;
   width:200px;
+  shape-outside:border-box circle(50%);
+  shape-margin:20px;
 }
 .selfie:hover{
   -webkit-transform:rotate(-180deg);
