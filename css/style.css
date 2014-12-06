@@ -14,6 +14,47 @@ body{
   line-height:1.7em;
   padding:20px;
 }
+.blurb{
+  color:#999;
+  font-size:1.8em;
+  left:50%;
+  line-height:44px;
+  margin:0 auto;
+  position:absolute;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+  width:76%;
+}
+.blurb .name{
+  color:#666;
+  display:block;
+  float:right;
+  margin-top:20px;
+}
+.container{
+  margin:0 auto;
+  max-width:1000px;
+}
+.content{
+  background:#fff;
+  border:2px solid #8881cf;
+  border-radius:10px;
+  clear:both;
+  min-height:500px;
+  padding:20px 40px;
+  position:relative;
+}
+.content p {
+  font-size:1.1em;
+  line-height:1.5em;
+  padding:10px 0;
+}
+nav, footer{
+  margin:15px 0;
+  text-align:right;
+  width:100%;
+}
 nav h1 a{
   color:#555;
   float:left;
@@ -22,17 +63,6 @@ nav h1 a{
   font-variant:small-caps;
   letter-spacing:5px;
   line-height:0;
-}
-.text-right{float:right;text-align:right;}
-.text-left{float:left;text-align:left;}
-.container{
-  margin:0 auto;
-  max-width:1000px;
-}
-nav, footer{
-  margin:15px 0;
-  text-align:right;
-  width:100%;
 }
 nav ul, nav li, footer ul, footer li{
   list-style:none;
@@ -65,16 +95,6 @@ nav li:first-child a,footer li:first-child a{
 nav li:last-child a,footer li:last-child a{
   padding-right:0;
 }
-.content{
-  background:#fff;
-  border:2px solid #8881cf;
-  border-radius:10px;
-  clear:both;
-  min-height:500px;
-  padding:20px 40px;
-  position:relative;
-}
-
 .selfie{
   background:url(../images/waldo.jpg) no-repeat 0 -85px;
   background-size:112%;
@@ -99,27 +119,5 @@ nav li:last-child a,footer li:last-child a{
   height:100%;
   width:100%;
 }
-.blurb{
-  color:#999;
-  font-size:2em;
-  left:50%;
-  line-height:44px;
-  margin:0 auto;
-  position:absolute;
-  text-align:center;
-  top:50%;
-  transform:translate(-50%, -50%);
-  width:76%;
-}
-.blurb .name{
-  color:#666;
-  display:block;
-  float:right;
-  margin-top:20px;
-}
-
-.content p {
-  font-size:1.1em;
-  line-height:1.5em;
-  padding:10px 0;
-}
+.text-right{float:right;text-align:right;}
+.text-left{float:left;text-align:left;}
