@@ -8,6 +8,8 @@ html,body,h1,h2,h3,h4,h5,h6,p{
   padding:0;
 }
 a{
+  color:#8881cf;
+  font-weight:400;
   text-decoration:none;
 }
 body{
@@ -65,6 +67,7 @@ nav h1 a{
   margin:5px 0 0 180px;
   font-size:2em;
   font-variant:small-caps;
+  font-weight:300;
   letter-spacing:5px;
   line-height:0;
 }
@@ -80,6 +83,7 @@ nav li, footer li{
 nav li a, footer li a{
   color:#555;
   font-size:20px;
+  font-weight:300;
   opacity: 0.7;
   padding:8px 20px;
   text-decoration:none;
