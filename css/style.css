@@ -21,9 +21,9 @@ body{
 }
 .blurb{
   color:#999;
-  font-size:1.8em;
+  font-size:1.3em;
   left:50%;
-  line-height:44px;
+  line-height:1.4em;
   margin:0 auto;
   position:absolute;
   text-align:center;
@@ -83,12 +83,13 @@ nav li, footer li{
   display:inline-block;
   letter-spacing:3px;
 }
+nav li {display: block;}
 nav li a, footer li a{
   color:#555;
   font-size:1.14em;
   font-weight:300;
   opacity: 0.7;
-  padding:8px 20px;
+  padding:8px 0;
   text-decoration:none;
 }
 footer li a {
@@ -140,6 +141,18 @@ nav li:last-child a,footer li:last-child a{
 }
 .text-right{float:right;text-align:right;}
 .text-left{float:left;text-align:left;}
+
+@media (min-width:500px) {
+  .blurb {
+    font-size:1.8em;
+  }
+  nav li {
+    display:inline-block;
+  }
+  nav li a {
+    padding:8px 20px;
+  }
+}
 
 @media (min-width:850px) {
   .container{
