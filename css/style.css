@@ -121,7 +121,7 @@ nav li.sel a{
   font-weight:500;
   opacity:1.0;
 }
-nav li:first-child a,footer li:first-child a{
+nav li:first-child a,nav li.sel:first-child a,footer li:first-child a{
   padding-left:0;
 }
 nav li:last-child a,footer li:last-child a{
