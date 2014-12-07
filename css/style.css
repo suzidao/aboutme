@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,600,400);
+@import url(../font-awesome/css/font-awesome.min.css);
 
 html,body,h1,h2,h3,h4,h5,h6,p{
   border:0;
@@ -64,7 +65,7 @@ nav, footer{
 nav h1 a{
   color:#555;
   float:left;
-  margin:5px 0 0 180px;
+  margin:5px 0 0 0;
   font-size:2em;
   font-variant:small-caps;
   font-weight:300;
@@ -82,12 +83,17 @@ nav li, footer li{
 }
 nav li a, footer li a{
   color:#555;
-  font-size:20px;
+  font-size:1.14em;
   font-weight:300;
   opacity: 0.7;
   padding:8px 20px;
   text-decoration:none;
 }
+footer li a {
+  padding:0 5px;
+}
+footer li a span { display:none; }
+footer .fa { display:inline; }
 nav li a:hover, footer li a:hover{
   opacity:1.0;
 }
@@ -108,6 +114,7 @@ nav li:last-child a,footer li:last-child a{
   background-size:112%;
   border-radius:50%;
   box-sizing:border-box;
+  display:none;
   float:left;
   height:200px;
   margin:-70px 50px 0 -100px;
@@ -131,3 +138,22 @@ nav li:last-child a,footer li:last-child a{
 }
 .text-right{float:right;text-align:right;}
 .text-left{float:left;text-align:left;}
+@media (min-width:850px) {
+  footer .fa {
+    display:none;
+  }
+  footer li a {
+    padding:8px 20px;
+  }
+  footer li a span {
+    display:inline;
+  }
+}
+@media (min-width:1000px) {
+  nav h1 a {
+    margin-left:150px;
+  }
+  .selfie{
+    display:block;
+  }
+}
