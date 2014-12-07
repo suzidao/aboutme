@@ -111,7 +111,9 @@ nav li:last-child a,footer li:last-child a{
   transition:1s;
   width:200px;
   shape-outside:border-box circle(50%);
+  -webkit-shape-outside:border-box circle(50%);
   shape-margin:30px;
+  -webkit-shape-margin:30px;
 }
 .selfie:hover{
   -webkit-transform:rotate(-180deg);
