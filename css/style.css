@@ -63,10 +63,14 @@ nav, footer{
   width:100%;
 }
 nav { text-align:left;}
+nav h1{
+  padding-top:7px;
+  position:absolute;
+}
 nav h1 a{
   color:#555;
   float:left;
-  margin:5px 0 0 0;
+  margin:0;
   font-size:2em;
   font-variant:small-caps;
   font-weight:300;
