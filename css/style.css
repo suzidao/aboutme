@@ -41,7 +41,7 @@ body{
 .container{
   margin:0 auto;
   max-width:1000px;
-  padding:0 60px;
+  padding:0 5px;
 }
 .content{
   background:#fff;
@@ -62,6 +62,7 @@ nav, footer{
   text-align:right;
   width:100%;
 }
+nav { text-align:left;}
 nav h1 a{
   color:#555;
   float:left;
@@ -77,6 +78,7 @@ nav ul, nav li, footer ul, footer li{
   margin:0;
   padding:0;
 }
+nav ul {clear:both;float:left;margin:35px 0 10px;}
 nav li, footer li{
   display:inline-block;
   letter-spacing:3px;
@@ -138,7 +140,11 @@ nav li:last-child a,footer li:last-child a{
 }
 .text-right{float:right;text-align:right;}
 .text-left{float:left;text-align:left;}
+
 @media (min-width:850px) {
+  .container{
+    padding:0 60px;
+  }
   footer .fa {
     display:none;
   }
@@ -147,6 +153,13 @@ nav li:last-child a,footer li:last-child a{
   }
   footer li a span {
     display:inline;
+  }
+  nav {
+    text-align:right;
+  }
+  nav ul {
+    float:none;
+    margin:0;
   }
 }
 @media (min-width:1000px) {
