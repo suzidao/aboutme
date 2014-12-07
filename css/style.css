@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,600,400);
+
 html,body,h1,h2,h3,h4,h5,h6,p{
   border:0;
   font-family:"Open Sans", Helvetica, Arial, sans-serif;
@@ -24,6 +26,7 @@ body{
   text-align:center;
   top:50%;
   transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
   width:76%;
 }
 .blurb .name{
@@ -35,6 +38,7 @@ body{
 .container{
   margin:0 auto;
   max-width:1000px;
+  padding:0 60px;
 }
 .content{
   background:#fff;
