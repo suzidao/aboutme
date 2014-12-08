@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700,300,600,400);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300);
 @import url(../font-awesome/css/font-awesome.min.css);
 
 html,body,h1,h2,h3,h4,h5,h6,p{
@@ -9,7 +10,7 @@ html,body,h1,h2,h3,h4,h5,h6,p{
   padding:0;
 }
 a{
-  color:#8881cf;
+  color:#c22b34;
   font-weight:400;
   text-decoration:none;
 }
@@ -33,9 +34,12 @@ body{
   width:76%;
 }
 .blurb .name{
-  color:#666;
+  color:#777;
   display:block;
   float:right;
+  font-family:"Open Sans Condensed", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size:1em;
+  font-weight:600;
   margin-top:20px;
 }
 .container{
@@ -45,7 +49,7 @@ body{
 }
 .content{
   background:#fff;
-  border:2px solid #8881cf;
+  border:2px solid #c22b34;
   border-radius:10px;
   clear:both;
   min-height:400px;
@@ -73,7 +77,7 @@ nav h1 a{
   margin:0;
   font-size:2em;
   font-variant:small-caps;
-  font-weight:300;
+  font-weight:400;
   letter-spacing:5px;
   line-height:0;
   position:relative;
@@ -101,25 +105,48 @@ nav li, footer li{
 }
 nav li {display: block;}
 nav li a, footer li a{
-  color:#555;
+  color:#999;
   font-size:1.14em;
   font-weight:300;
-  opacity: 0.7;
   padding:8px 0;
   text-decoration:none;
 }
 footer li a {
   padding:0 5px;
+  
 }
-footer li a span { display:none; }
-footer .fa { display:inline; }
-nav li a:hover, footer li a:hover{
+footer a .overlay {
+  background:#fbfbfb;
+  color:#c22b34;
+  display:none;
+  font-family:"Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
+  font-size:1.1em;
+  left:0;
+  line-height: 1.1em;
+  opacity:0;
+  position:absolute;
+  text-align:left;
+  top:0;
+  transition:1s;
+  width:100%;
+  z-index:2;
+}
+footer a:hover .overlay {
   opacity:1.0;
+}
+footer li a div {display:none;position:relative; }
+footer .fa-3x { color:#c22b34;display:inline; }
+footer .fa-lg {
+  display:none;
+  color:#c22b34;
+  line-height:.4em;
+}
+nav li a:hover{
+  color:#c22b34;
 }
 nav li.sel a{
-  color:#555;
+  color:#c22b34;
   font-weight:500;
-  opacity:1.0;
 }
 nav li:first-child a,nav li.sel:first-child a,footer li:first-child a{
   padding-left:0;
@@ -183,14 +210,20 @@ nav li:last-child a,footer li:last-child a{
   .container{
     padding:0 60px;
   }
-  footer .fa {
+  footer .fa-3x {
     display:none;
+  }
+  footer .fa-lg {
+    display:inline-block;
   }
   footer li a {
     padding:8px 20px;
   }
-  footer li a span {
+  footer li a div {
     display:inline;
+  }
+  footer li a .overlay {
+    display:block;
   }
   nav {
     text-align:right;
@@ -201,6 +234,7 @@ nav li:last-child a,footer li:last-child a{
   }
 }
 @media (min-width:1000px) {
+  
   nav h1 a {
     margin-left:150px;
   }
