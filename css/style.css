@@ -15,7 +15,7 @@ a{
   text-decoration:none;
 }
 body{
-  background:#fbfbfb;
+  background:#f5f5f5;
   font-size:1.1em;
   line-height:1.7em;
   padding:10px;
@@ -61,6 +61,25 @@ body{
   line-height:1.5em;
   padding:10px 0;
 }
+.logo-list{
+  display:block;
+  float:left;
+  height:auto;
+  width:100%;
+}
+.logo-list ul,.logo-list ul li{
+  height:auto;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.logo-list ul li{
+  display:block;
+  float:left;
+  margin:10px 0;
+  width:20%;
+}
+.logo-list ul li .logo{width:100%;}
 nav, footer{
   margin:15px 0;
   text-align:right;
@@ -105,7 +124,7 @@ nav li, footer li{
 }
 nav li {display: block;}
 nav li a, footer li a{
-  color:#999;
+  color:#777;
   font-size:1.14em;
   font-weight:300;
   padding:8px 0;
@@ -116,7 +135,7 @@ footer li a {
   
 }
 footer a .overlay {
-  background:#fbfbfb;
+  background:#f5f5f5;
   color:#c22b34;
   display:none;
   font-family:"Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
