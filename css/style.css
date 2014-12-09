@@ -57,29 +57,44 @@ body{
   position:relative;
 }
 .content p {
-  font-size:1.1em;
+  font-size:.95em;
   line-height:1.5em;
   padding:10px 0;
 }
 .logo-list{
   display:block;
-  float:left;
   height:auto;
   width:100%;
 }
 .logo-list ul,.logo-list ul li{
+  display:block;
   height:auto;
   list-style:none;
   margin:0;
   padding:0;
 }
-.logo-list ul li{
-  display:block;
-  float:left;
-  margin:10px 0;
-  width:20%;
+.logo-list ul{
+  margin:20px 0;
 }
-.logo-list ul li .logo{width:100%;}
+.logo-list ul li{
+  display:inline-block;
+  margin:0;
+  text-align:center;
+  width:200px;
+}
+.logo-list ul li .logo{
+  filter:saturate(25%);
+  -webkit-filter:saturate(20%);
+  opacity:.8;
+  transition:1s;
+  width:90%;
+}
+.logo-list ul li .logo:hover,.logo-list ul li .logo:focus{
+  filter:saturate(100%);
+  -webkit-filter:saturate(100%);
+  opacity:1;
+  transition:1s;
+}
 nav, footer{
   margin:15px 0;
   text-align:right;
@@ -233,8 +248,12 @@ nav li:last-child a,footer li:last-child a{
     padding:0 10px;
   }
   .content {
+    font-size:1.1em;
     min-height:500px;
     padding:20px 40px;
+  }
+  .logo-list ul li{
+    width:32%%;
   }
   nav li {
     display:inline-block;
@@ -266,6 +285,9 @@ nav li:last-child a,footer li:last-child a{
   footer li a .overlay {
     display:block;
   }
+  .logo-list ul li{
+    width:24%;
+  }
   nav {
     text-align:right;
   }
@@ -275,7 +297,9 @@ nav li:last-child a,footer li:last-child a{
   }
 }
 @media (min-width:1000px) {
-  
+  .logo-list ul li{
+    width:19%;
+  }
   nav h1 a {
     margin-left:150px;
   }
