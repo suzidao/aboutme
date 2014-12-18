@@ -15,7 +15,8 @@ a{
   text-decoration:none;
 }
 body{
-  background:#f5f5f5;
+  background:url(../images/taroko_gorge.jpg) no-repeat center fixed #f5f5f5;
+  background-size:cover;
   font-size:1.1em;
   line-height:1.7em;
   padding:10px;
@@ -53,6 +54,7 @@ body{
   border-radius:10px;
   clear:both;
   min-height:400px;
+  opacity:0.9;
   padding:0 15px;
   position:relative;
 }
@@ -60,57 +62,6 @@ body{
   font-size:.95em;
   line-height:1.5em;
   padding:10px 0;
-}
-.work-samples{
-  display:block;
-  height:auto;
-  width:100%;
-}
-.work-samples ul,.work-samples ul lh,.work-samples ul li{
-  display:block;
-  height:auto;
-  list-style:none;
-  margin:0;
-  padding:0;
-}
-.work-samples ul{
-  display:inline-block;
-  margin:20px 0;
-}
-.work-samples ul li{
-  background:#fff;
-  display:block;
-  margin:0;
-  text-align:center;
-  width:100%;
-}
-.work-samples ul li .logo{
-  filter:saturate(25%);
-  -webkit-filter:saturate(20%);
-  float:left;
-  opacity:.8;
-  transition:1s;
-  width:160px;
-}
-.work-samples ul li:hover .logo,.work-samples ul li:focus .logo{
-  filter:saturate(100%);
-  -webkit-filter:saturate(100%);
-  opacity:1;
-  transition:1s;
-}
-.work-samples .details{
-  background:#fff;
-  display:block;
-  float:left;
-  font-size:.9em;
-  line-height:1.5em;
-  text-align:left;
-  width:100%;
-}
-.logo-list .details .close{
-  color:#333;
-  float:right;
-  padding:0 0 10px 10px;
 }
 nav, footer{
   margin:15px 0;
@@ -156,18 +107,18 @@ nav li, footer li{
 }
 nav li {display: block;}
 nav li a, footer li a{
-  color:#777;
+  color:#333;
   font-size:1.14em;
   font-weight:300;
   padding:8px 0;
   text-decoration:none;
 }
 footer li a {
+  color:#999;
+  font-weight:300;
   padding:0 5px;
-  
 }
-footer a .overlay {
-  background:#f5f5f5;
+footer a .overlay{
   color:#c22b34;
   display:none;
   font-family:"Open Sans Condensed","Open Sans",Helvetica,Arial,sans-serif;
@@ -184,6 +135,13 @@ footer a .overlay {
 }
 footer a:hover .overlay {
   opacity:1.0;
+}
+footer a .underlay {
+  transition:1s;
+}
+footer a:hover .underlay {
+  opacity:0;
+  transition:1s;
 }
 footer li a div {display:none;position:relative; }
 footer .fa-3x { color:#c22b34;display:inline; }
@@ -256,6 +214,57 @@ nav li:last-child a,footer li:last-child a{
 }
 .text-right{float:right;text-align:right;}
 .text-left{float:left;text-align:left;}
+.work-samples{
+  display:block;
+  height:auto;
+  width:100%;
+}
+.work-samples ul,.work-samples ul lh,.work-samples ul li{
+  display:block;
+  height:auto;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.work-samples ul{
+  display:inline-block;
+  margin:20px 0;
+}
+.work-samples ul li{
+  background:#fff;
+  display:block;
+  margin:0;
+  text-align:center;
+  width:100%;
+}
+.work-samples ul li .logo{
+  filter:saturate(25%);
+  -webkit-filter:saturate(20%);
+  float:left;
+  opacity:.8;
+  transition:1s;
+  width:160px;
+}
+.work-samples ul li:hover .logo,.work-samples ul li:focus .logo{
+  filter:saturate(100%);
+  -webkit-filter:saturate(100%);
+  opacity:1;
+  transition:1s;
+}
+.work-samples .details{
+  background:#fff;
+  display:block;
+  float:left;
+  font-size:.9em;
+  line-height:1.5em;
+  text-align:left;
+  width:100%;
+}
+.work-samples .details .close{
+  color:#333;
+  float:right;
+  padding:0 0 10px 10px;
+}
 
 @media (min-width:500px) {
   .blurb {
